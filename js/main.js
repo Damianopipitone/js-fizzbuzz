@@ -1,32 +1,42 @@
 for (let i = 1; i <= 100; i++) {
     if (i % 3 == 0 && i % 5 === 0) {
+        
+        document.getElementById("container-for-squares").innerHTML += `
+        <div class="square">
+            <p>FizzBuzz</p>
+        </div>
+        `;
+        
         console.log("FizzBuzz");
-        document.getElementById("container-for-squares").innerHTML += `
-        <div class="square">
-            <p>${"FizzBuzz"}</p>
-        </div>
-        `;
     } else if (i % 3 === 0) {
+        
+        document.getElementById("container-for-squares").innerHTML += `
+        <div class="square">
+            <p>Fizz</p>
+        </div>
+        `;
+        
         console.log("Fizz");
-        document.getElementById("container-for-squares").innerHTML += `
-        <div class="square">
-            <p>${"Fizz"}</p>
-        </div>
-        `;
     } else if (i % 5 === 0) {
-        console.log("Buzz");
+        
         document.getElementById("container-for-squares").innerHTML += `
         <div class="square">
-            <p>${"Buzz"}</p>
+            <p>Buzz</p>
         </div>
         `;
+        
+        console.log("Buzz");
     } else {
-        console.log(i);
+        
+        document.getElementById("container-for-squares").innerHTML += `
+        <div class="square">
+            <p>${i}</p>
+        </div>
+        `;
+        
+        console.log(i); 
     };
-    document.getElementById("container-for-squares").innerHTML += `
-    <div class="square">
-        <p>${i}</p>
-    </div>
-    `;
+    
+   
 };
 
